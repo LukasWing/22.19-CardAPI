@@ -9,6 +9,7 @@ open Microsoft.Extensions.Hosting
 open Microsoft.Extensions.Logging
 open Microsoft.Extensions.DependencyInjection
 open Giraffe
+open Controller
 
 // ---------------------------------
 // Models
@@ -51,7 +52,7 @@ module Views =
 // ---------------------------------
 
 let indexHandler (name : string) =
-    let greetings = sprintf "Hello %s, from Giraffe!" name
+    let greetings = sprintf "%s %s, from Giraffe!" hwc name
     let model     = { Text = greetings }
     let view      = Views.index model
     htmlView view
