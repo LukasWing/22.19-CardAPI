@@ -1,4 +1,23 @@
 ###
-# Should return succesful response
+# Should return succesful response and post to db
+POST https://localhost:5001/card HTTP/1.1
+Content-Type: application/json
 
-GET https://localhost:5001/hello/lukas HTTP/1.1
+{"Question": "What is Giraffe","Answer": "A fsharp framework to build Http servers", "nDisplays": 3}
+
+###
+# Should return meaningful error
+POST https://localhost:5001/card HTTP/1.1
+Content-Type: application/json
+
+{"Queion": "What is Giraffe","Answer": "A fsharp framework to build Http servers"}
+
+###
+# Should return meaningful error
+POST https://localhost:5001/card HTTP/1.1
+Content-Type: application/json
+
+
+
+
+

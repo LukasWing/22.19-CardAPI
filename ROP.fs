@@ -111,3 +111,8 @@ let debugLogger twoTrackInput =
 /// logs only if debug in config is true
 let injectableLogger config = 
     if config.debug then debugLogger else id
+
+let unpackRes res = 
+    match res with 
+    | Success s -> s
+    | Failure f -> f

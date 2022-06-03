@@ -1,4 +1,3 @@
-C:\Users\LukasDannebrogJensen\OneDrive - ITU\20-29 Hobby\22 WebProjekter\22.19 CardAPI\bin\Debug\net5.0\WebRoot\main.css
 C:\Users\LukasDannebrogJensen\OneDrive - ITU\20-29 Hobby\22 WebProjekter\22.19 CardAPI\bin\Debug\net5.0\web.config
 C:\Users\LukasDannebrogJensen\OneDrive - ITU\20-29 Hobby\22 WebProjekter\22.19 CardAPI\bin\Debug\net5.0\22.19 CardAPI.App.exe
 C:\Users\LukasDannebrogJensen\OneDrive - ITU\20-29 Hobby\22 WebProjekter\22.19 CardAPI\bin\Debug\net5.0\22.19 CardAPI.App.deps.json
