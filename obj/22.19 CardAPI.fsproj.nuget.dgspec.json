@@ -51,9 +51,39 @@
               "version": "[1.3.*, )",
               "generatePathProperty": true
             },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.1.9, )",
+              "generatePathProperty": true
+            },
             "Ply": {
               "target": "Package",
               "version": "[0.3.*, )",
+              "generatePathProperty": true
+            },
+            "SQLProvider": {
+              "target": "Package",
+              "version": "[1.2.11, )",
+              "generatePathProperty": true
+            },
+            "System.Buffers": {
+              "target": "Package",
+              "version": "[4.5.1, )",
+              "generatePathProperty": true
+            },
+            "System.Data.Common": {
+              "target": "Package",
+              "version": "[4.3.0, )",
+              "generatePathProperty": true
+            },
+            "System.Runtime.InteropServices.RuntimeInformation": {
+              "target": "Package",
+              "version": "[4.3.0, )",
+              "generatePathProperty": true
+            },
+            "System.Threading.Tasks.Extensions": {
+              "target": "Package",
+              "version": "[4.5.4, )",
               "generatePathProperty": true
             }
           },

@@ -13,8 +13,14 @@
     <SourceRoot Include="C:\Users\LukasDannebrogJensen\.nuget\packages\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgSystem_Threading_Tasks_Extensions Condition=" '$(PkgSystem_Threading_Tasks_Extensions)' == '' ">C:\Users\LukasDannebrogJensen\.nuget\packages\system.threading.tasks.extensions\4.5.4</PkgSystem_Threading_Tasks_Extensions>
+    <PkgSystem_Runtime_InteropServices_RuntimeInformation Condition=" '$(PkgSystem_Runtime_InteropServices_RuntimeInformation)' == '' ">C:\Users\LukasDannebrogJensen\.nuget\packages\system.runtime.interopservices.runtimeinformation\4.3.0</PkgSystem_Runtime_InteropServices_RuntimeInformation>
+    <PkgSystem_Data_Common Condition=" '$(PkgSystem_Data_Common)' == '' ">C:\Users\LukasDannebrogJensen\.nuget\packages\system.data.common\4.3.0</PkgSystem_Data_Common>
+    <PkgSystem_Buffers Condition=" '$(PkgSystem_Buffers)' == '' ">C:\Users\LukasDannebrogJensen\.nuget\packages\system.buffers\4.5.1</PkgSystem_Buffers>
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\LukasDannebrogJensen\.nuget\packages\fsharp.core\6.0.2</PkgFSharp_Core>
+    <PkgSQLProvider Condition=" '$(PkgSQLProvider)' == '' ">C:\Users\LukasDannebrogJensen\.nuget\packages\sqlprovider\1.2.11</PkgSQLProvider>
     <PkgPly Condition=" '$(PkgPly)' == '' ">C:\Users\LukasDannebrogJensen\.nuget\packages\ply\0.3.1</PkgPly>
+    <PkgMySqlConnector Condition=" '$(PkgMySqlConnector)' == '' ">C:\Users\LukasDannebrogJensen\.nuget\packages\mysqlconnector\2.1.9</PkgMySqlConnector>
     <PkgGiraffe_ViewEngine Condition=" '$(PkgGiraffe_ViewEngine)' == '' ">C:\Users\LukasDannebrogJensen\.nuget\packages\giraffe.viewengine\1.3.0</PkgGiraffe_ViewEngine>
     <PkgGiraffe Condition=" '$(PkgGiraffe)' == '' ">C:\Users\LukasDannebrogJensen\.nuget\packages\giraffe\5.0.0-rc-6</PkgGiraffe>
   </PropertyGroup>

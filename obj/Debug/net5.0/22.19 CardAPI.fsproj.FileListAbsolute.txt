@@ -36,3 +36,5 @@ C:\Users\LukasDannebrogJensen\OneDrive - ITU\20-29 Hobby\22 WebProjekter\22.19 C
 C:\Users\LukasDannebrogJensen\OneDrive - ITU\20-29 Hobby\22 WebProjekter\22.19 CardAPI\obj\Debug\net5.0\22.19 CardAPI.App.dll
 C:\Users\LukasDannebrogJensen\OneDrive - ITU\20-29 Hobby\22 WebProjekter\22.19 CardAPI\obj\Debug\net5.0\22.19 CardAPI.App.pdb
 C:\Users\LukasDannebrogJensen\OneDrive - ITU\20-29 Hobby\22 WebProjekter\22.19 CardAPI\obj\Debug\net5.0\22.19 CardAPI.genruntimeconfig.cache
+C:\Users\LukasDannebrogJensen\OneDrive - ITU\20-29 Hobby\22 WebProjekter\22.19 CardAPI\bin\Debug\net5.0\MySqlConnector.dll
+C:\Users\LukasDannebrogJensen\OneDrive - ITU\20-29 Hobby\22 WebProjekter\22.19 CardAPI\bin\Debug\net5.0\FSharp.Data.SqlProvider.dll
