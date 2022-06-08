@@ -6,10 +6,10 @@ open Model
 let postCard :HttpHandler =
     fun (next: HttpFunc) (ctx: HttpContext) ->
     task {
-      let! card = ctx.BindJsonAsync<Submission>()
+      let! sub = ctx.BindJsonAsync<Submission>()
       let resultFunc =
-        match insertCard card with
-            | ROP.Success(msg) -> json msg >=> setStatusCode 201 
-            | ROP.Failure(errorMsg) -> json errorMsg >=> setStatusCode 400
+        match insertSub sub with
+          | ROP.Success(msg) -> json msg >=> setStatusCode 201 
+          | ROP.Failure(errorMsg) -> json errorMsg >=> setStatusCode 400
       return! resultFunc next ctx
   }

@@ -2,7 +2,8 @@ module _22._19_CardAPI.Model
 open ROP
 open System
 open FSharp.Data.Sql
-
+open Microsoft.AspNetCore.Http
+open Giraffe
 type MQ = SqlDataProvider<Common.DatabaseProviderTypes.MYSQL, DbCredentials.connStr, Owner = DbCredentials.owner, ResolutionPath = DbCredentials.resolutionPath>
 type Card = {
         Word: String; 
@@ -23,9 +24,10 @@ type Message = {
 }
 
 let validateQASize sub = 
+    printf "%A" sub
     if sub.Question.Length > 256 || sub.Answer.Length > 256 
-    then Success(sub)
-    else Failure("Size of question or answer to big")
+    then Failure("Size of question or answer to big")
+    else Success(sub)
 
 let validateNDisps sub = 
     match 0 < sub.nDisplays && sub.nDisplays < 10 with 
@@ -39,26 +41,23 @@ let validateQANotEmpty = function
         | sub -> Success(sub)
 
 let getDates nDisplays = 
-    let today n = System.DateTime.Today.AddDays(float(n))
-    [0;1;3;7;15;31;63;127;255;511;1023] |> List.take nDisplays |> List.map today
+    let targetDate n = System.DateTime.Today.AddDays(float(n)).AddHours(12.0)
+    List.init 10 (fun i -> int(2.0 ** i) - 1) |> List.take nDisplays |> List.map targetDate
 
 let prepC q a (d:DateTime) = 
     let unixTimestamp = int64(d.Subtract(new DateTime(1970, 1, 1)).TotalSeconds) * 1000L
-    {
-        Word=q;
+    {   Word=q;
         Meaning=a;
         Displayed=0;
         Remembered=0;
         Displaytime=unixTimestamp;
         UserId=2050;
-        Id=1234;
-    }
+        Id=1234
+        }
 let prepareCards {Question=q; Answer=a; nDisplays=n} =
     getDates n 
     |> List.map (prepC q a)
     |> Success
-      
-
     
 let insertCards cards =
     Common.QueryEvents.SqlQueryEvent |> Event.add (printfn "Executing SQL: %O")
@@ -78,16 +77,10 @@ let insertCards cards =
         sprintf "Card %s with succesfully inserted" (card.Word)
     cards 
         |> List.map insertCard 
-        |> List.fold (+) "" 
-        |> Success
+        |> List.fold (+) ""  
 
-
-
-let insertCard sub = 
-    sub |> 
-    validateQASize 
-    >>= validateNDisps
-    >>= validateQANotEmpty
-    >>= prepareCards
-    >>= insertCards
-
+let insertSub card = 
+    card 
+    |> (validateQASize &&& validateNDisps &&& validateQANotEmpty) 
+    >>= prepareCards 
+    >>= tryCatch insertCards

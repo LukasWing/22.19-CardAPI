@@ -3895,11 +3895,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LukasDannebrogJensen\\OneDrive - ITU\\20-29 Hobby\\22 WebProjekter\\22.19 CardAPI\\22.19 CardAPI.fsproj",
+      "projectUniqueName": "C:\\Users\\LukasDannebrogJensen\\OneDrive - ITU\\20-29 Hobby\\22 WebProjekter\\22.19 CardAPI-P\\22.19 CardAPI.fsproj",
       "projectName": "22.19 CardAPI.App",
-      "projectPath": "C:\\Users\\LukasDannebrogJensen\\OneDrive - ITU\\20-29 Hobby\\22 WebProjekter\\22.19 CardAPI\\22.19 CardAPI.fsproj",
+      "projectPath": "C:\\Users\\LukasDannebrogJensen\\OneDrive - ITU\\20-29 Hobby\\22 WebProjekter\\22.19 CardAPI-P\\22.19 CardAPI.fsproj",
       "packagesPath": "C:\\Users\\LukasDannebrogJensen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LukasDannebrogJensen\\OneDrive - ITU\\20-29 Hobby\\22 WebProjekter\\22.19 CardAPI\\obj\\",
+      "outputPath": "C:\\Users\\LukasDannebrogJensen\\OneDrive - ITU\\20-29 Hobby\\22 WebProjekter\\22.19 CardAPI-P\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\LukasDannebrogJensen\\AppData\\Roaming\\NuGet\\NuGet.Config",

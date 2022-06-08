@@ -6,18 +6,33 @@ Content-Type: application/json
 {"Question": "What is Giraffe","Answer": "A fsharp framework to build Http servers", "nDisplays": 3}
 
 ###
-# Should return meaningful error
+# Should return error
 POST https://localhost:5001/card HTTP/1.1
 Content-Type: application/json
 
 {"Queion": "What is Giraffe","Answer": "A fsharp framework to build Http servers"}
 
 ###
-# Should return meaningful error
+# Should return  error
 POST https://localhost:5001/card HTTP/1.1
 Content-Type: application/json
 
+###
+# Should return  error due long question
+POST https://localhost:5001/card HTTP/1.1
+Content-Type: application/json
 
+{"Question": "What is Girasdafdsfmadksfmkadsfmkdasfmkadfmkdasfadnfjandfadsfajdsfnjadfn
+asdfasdjfnajsdfnajkdsfblhadfbjhdfbasdlf
+afnadjklsfnladsbfajhldfbadhjfbhjadfbffe","Answer": "A fsharp framework to build Http servers", "nDisplays": 3}
+
+
+###
+# Should return error empty answer
+POST https://localhost:5001/card HTTP/1.1
+Content-Type: application/json
+
+{"Question": "What is Gira", "Answer": "", "nDisplays": 3}
 
 
 

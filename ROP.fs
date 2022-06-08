@@ -59,10 +59,8 @@ let tee f x =
 
 // ** Handling exceptions **
 let tryCatch f x =
-    try
-        f x |> Success
-    with
-    | ex -> Failure ex.Message
+    try f x |> Success
+    with ex -> Failure ex.Message
 
 /// ** Functions with two-track input, e.g., for logging. **
 let doubleMap successFunc failureFunc twoTrackInput =
@@ -76,14 +74,6 @@ let log twoTrackInput =
     let failure x = printfn "ERROR. %A" x; x
     doubleMap success failure twoTrackInput 
   
-
-
-/// ** Converting a single value to a two-track value **
-let succeed x = Success x
-
-/// ** Converting a single value to a two-track value **
-let fail x = Failure x
-
 /// ** Combining functions in parallel **
 let plus addSuccess addFailure switch1 switch2 x = 
     match (switch1 x),(switch2 x) with

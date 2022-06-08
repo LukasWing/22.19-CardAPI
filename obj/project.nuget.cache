@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jg4uVXMTGtseo0Vp9t4Xjq87Gqv8GncPOodM+f1iqQWGrsyPGClbZ0FFT/1wPO2F/SMgtCLHgXxPUQxaD9TI+w==",
+  "dgSpecHash": "Gr9zcKriWFWmQu0NHcVvUFPTspf6Vg0y+alCXcWT48wY86wQqKDehMRamvjDdXbyyk4R0ruvPipR7Cw386+aCA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LukasDannebrogJensen\\OneDrive - ITU\\20-29 Hobby\\22 WebProjekter\\22.19 CardAPI\\22.19 CardAPI.fsproj",
+  "projectFilePath": "C:\\Users\\LukasDannebrogJensen\\OneDrive - ITU\\20-29 Hobby\\22 WebProjekter\\22.19 CardAPI-P\\22.19 CardAPI.fsproj",
   "expectedPackageFiles": [
     "C:\\Users\\LukasDannebrogJensen\\.nuget\\packages\\fsharp.core\\6.0.2\\fsharp.core.6.0.2.nupkg.sha512",
     "C:\\Users\\LukasDannebrogJensen\\.nuget\\packages\\giraffe\\5.0.0-rc-6\\giraffe.5.0.0-rc-6.nupkg.sha512",
