@@ -24,8 +24,8 @@ Body: Card JSON Data, E.g.:
     {"Question": "Capitol of France is?", "Answer":"Paris", "nDisplays": 6}
 ```
 Success reponse: 
->Code: 200 CREATED<br>
->Body Content: -
+>Code: 201 CREATED<br>
+>Body Content: <code>"Card ..."</code>
 
 Error Response: 
 >Code: 400 REQUEST ERROR<br>
