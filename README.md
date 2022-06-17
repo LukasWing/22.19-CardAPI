@@ -11,9 +11,6 @@ Railway Oriented Programming (ROP)
 # Dependencies
 Project is dependent a MySQL database, whose credentials are not public
 
-
-
-
 # API Specification
 Path: <code>/card</code>
 
