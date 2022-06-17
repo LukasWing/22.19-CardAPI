@@ -27,7 +27,7 @@ Success reponse:
 >Code: 201 CREATED<br>
 >Body Content: <code>"Card ..."</code>
 
-Error Response: 
+Example Error Response: 
 >Code: 400 REQUEST ERROR<br>
 >Body Content: <code>"No answer given"</code>
 

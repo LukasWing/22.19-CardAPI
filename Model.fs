@@ -62,7 +62,7 @@ let insertCards cards =
     let ctx = MQ.GetDataContext()
     let db = ctx.MatquizDkDb
     let insertCard card = 
-        let words = db.Words    
+        let words = db.PilotWords    
         let word = words.Create()
         word.Word <- card.Word
         word.Meaning <- card.Meaning
