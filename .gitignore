@@ -1,3 +1,4 @@
 DbCredentials.fs
-
+bin
+obj
 .fake
