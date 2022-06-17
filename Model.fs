@@ -2,8 +2,6 @@ module _22._19_CardAPI.Model
 open ROP
 open System
 open FSharp.Data.Sql
-open Microsoft.AspNetCore.Http
-open Giraffe
 type MQ = SqlDataProvider<Common.DatabaseProviderTypes.MYSQL, DbCredentials.connStr, Owner = DbCredentials.owner, ResolutionPath = DbCredentials.resolutionPath>
 type Card = {
         Word: String; 
